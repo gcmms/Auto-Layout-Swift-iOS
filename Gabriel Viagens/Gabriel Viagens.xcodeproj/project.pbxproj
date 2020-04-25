@@ -13,6 +13,8 @@
 		0D0915DE2454C43000365716 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D0915DC2454C43000365716 /* Main.storyboard */; };
 		0D0915E02454C43400365716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D0915DF2454C43400365716 /* Assets.xcassets */; };
 		0D0915E32454C43400365716 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D0915E12454C43400365716 /* LaunchScreen.storyboard */; };
+		0D0915EB2454CED800365716 /* Viagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0915EA2454CED800365716 /* Viagem.swift */; };
+		0D0915EF2454D18D00365716 /* ViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0915EE2454D18C00365716 /* ViagemDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0D0915DF2454C43400365716 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D0915E22454C43400365716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D0915E42454C43400365716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D0915EA2454CED800365716 /* Viagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viagem.swift; sourceTree = "<group>"; };
+		0D0915EE2454D18C00365716 /* ViagemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViagemDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +62,10 @@
 			children = (
 				0D0915D62454C43000365716 /* AppDelegate.swift */,
 				0D0915D82454C43000365716 /* SceneDelegate.swift */,
+				0D0915EA2454CED800365716 /* Viagem.swift */,
 				0D0915DA2454C43000365716 /* ViewController.swift */,
 				0D0915DC2454C43000365716 /* Main.storyboard */,
+				0D0915EE2454D18C00365716 /* ViagemDAO.swift */,
 				0D0915DF2454C43400365716 /* Assets.xcassets */,
 				0D0915E12454C43400365716 /* LaunchScreen.storyboard */,
 				0D0915E42454C43400365716 /* Info.plist */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0915EB2454CED800365716 /* Viagem.swift in Sources */,
+				0D0915EF2454D18D00365716 /* ViagemDAO.swift in Sources */,
 				0D0915DB2454C43000365716 /* ViewController.swift in Sources */,
 				0D0915D72454C43000365716 /* AppDelegate.swift in Sources */,
 				0D0915D92454C43000365716 /* SceneDelegate.swift in Sources */,
