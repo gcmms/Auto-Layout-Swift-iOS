@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabelaViagens.dataSource = self
+        self.tabelaViagens.delegate = self
         setStyleForViewButton()
     }
     
@@ -38,13 +39,21 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "destinos", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "destinos", for: indexPath) as! DestinoTableViewCell
         let viagemAtual = listaViagens[indexPath.row]
         
-        cell.textLabel?.text = viagemAtual.titulo
+        cell.lblTitulo.text = viagemAtual.titulo
+        cell.qntDias.text = "\(viagemAtual.qntDias) Dias"
+        cell.lblPreco.text = "R$ \(viagemAtual.preco)"
+        cell.imagemDestino.image = UIImage(named: viagemAtual.urlImage)
+        
         return cell
     }
-    
-    
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 175
+    }
 }
 
