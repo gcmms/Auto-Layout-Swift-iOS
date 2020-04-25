@@ -72,27 +72,17 @@
 		0D0915D52454C43000365716 /* Gabriel Viagens */ = {
 			isa = PBXGroup;
 			children = (
-				0D0915F32454D68900365716 /* Assets */,
-				0D0915F02454D34700365716 /* Viagem */,
+				0D0916022454D7FB00365716 /* ViagemDao */,
+				0D0915FF2454D79100365716 /* Home */,
+				0D0915FE2454D76000365716 /* Model */,
 				0D0915D62454C43000365716 /* AppDelegate.swift */,
 				0D0915D82454C43000365716 /* SceneDelegate.swift */,
-				0D0915F12454D3DF00365716 /* DestinoTableViewCell.swift */,
-				0D0915DA2454C43000365716 /* ViewController.swift */,
 				0D0915DC2454C43000365716 /* Main.storyboard */,
 				0D0915DF2454C43400365716 /* Assets.xcassets */,
 				0D0915E12454C43400365716 /* LaunchScreen.storyboard */,
 				0D0915E42454C43400365716 /* Info.plist */,
 			);
 			path = "Gabriel Viagens";
-			sourceTree = "<group>";
-		};
-		0D0915F02454D34700365716 /* Viagem */ = {
-			isa = PBXGroup;
-			children = (
-				0D0915EA2454CED800365716 /* Viagem.swift */,
-				0D0915EE2454D18C00365716 /* ViagemDAO.swift */,
-			);
-			path = Viagem;
 			sourceTree = "<group>";
 		};
 		0D0915F32454D68900365716 /* Assets */ = {
@@ -105,6 +95,48 @@
 				0D0915F82454D68900365716 /* img1.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		0D0915FE2454D76000365716 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D0915EA2454CED800365716 /* Viagem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D0915FF2454D79100365716 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0D0916002454D7B500365716 /* Controller */,
+				0D0916012454D7BE00365716 /* View */,
+				0D0915F32454D68900365716 /* Assets */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0D0916002454D7B500365716 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D0915DA2454C43000365716 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0D0916012454D7BE00365716 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D0915F12454D3DF00365716 /* DestinoTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0D0916022454D7FB00365716 /* ViagemDao */ = {
+			isa = PBXGroup;
+			children = (
+				0D0915EE2454D18C00365716 /* ViagemDAO.swift */,
+			);
+			path = ViagemDao;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
