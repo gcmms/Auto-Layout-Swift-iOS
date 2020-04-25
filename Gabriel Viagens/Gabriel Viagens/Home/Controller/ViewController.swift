@@ -46,7 +46,8 @@ extension ViewController: UITableViewDataSource {
         cell.qntDias.text = "\(viagemAtual.qntDias) Dias"
         cell.lblPreco.text = "R$ \(viagemAtual.preco)"
         cell.imagemDestino.image = UIImage(named: viagemAtual.urlImage)
-        
+        cell.imagemDestino.layer.cornerRadius = defaultRadius
+        cell.imagemDestino.layer.masksToBounds = true
         return cell
     }
 }
