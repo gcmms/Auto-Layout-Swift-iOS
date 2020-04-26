@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,14 +12,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gabriel_Viagens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sf-er-UAH" userLabel="View Header">
-                                <rect key="frame" x="0.0" y="44" width="375" height="145"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="250"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ESPECIAL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybj-TT-LEB">
-                                        <rect key="frame" x="8" y="40" width="89.666666666666671" height="28"/>
+                                        <rect key="frame" x="8" y="40" width="89.5" height="28"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -31,10 +31,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gabriel Viagens " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4y-JW-XyI">
-                                        <rect key="frame" x="117" y="17" width="141" height="25"/>
+                                        <rect key="frame" x="393.5" y="17" width="237.5" height="44"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="32"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -44,16 +47,17 @@
                                     <constraint firstItem="ybj-TT-LEB" firstAttribute="top" secondItem="9sf-er-UAH" secondAttribute="top" constant="40" id="B6K-3o-wbG"/>
                                     <constraint firstItem="s4y-JW-XyI" firstAttribute="top" secondItem="9sf-er-UAH" secondAttribute="top" constant="17" id="UNk-q7-OtZ"/>
                                     <constraint firstItem="ctf-UW-7aJ" firstAttribute="top" secondItem="ybj-TT-LEB" secondAttribute="bottom" constant="2" id="VWf-hg-pxY"/>
-                                    <constraint firstAttribute="height" constant="145" id="YB8-om-UVg"/>
+                                    <constraint firstAttribute="height" constant="145" id="YB8-om-UVg">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                                    </constraint>
                                     <constraint firstItem="ybj-TT-LEB" firstAttribute="leading" secondItem="9sf-er-UAH" secondAttribute="leading" constant="8" id="cd8-LY-ryG"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Aw-54-lqC" userLabel="View btn Hotel">
-                                <rect key="frame" x="34" y="168" width="100" height="50"/>
+                                <rect key="frame" x="150" y="213" width="150" height="75"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMx-Cl-YX6">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMx-Cl-YX6">
+                                        <rect key="frame" x="54" y="22.5" width="42" height="30"/>
                                         <state key="normal" title="hóteis">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -61,16 +65,21 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="8Yx-y8-KQZ"/>
-                                    <constraint firstAttribute="width" constant="100" id="wnx-Pf-Oiu"/>
+                                    <constraint firstItem="uMx-Cl-YX6" firstAttribute="centerY" secondItem="3Aw-54-lqC" secondAttribute="centerY" id="6fe-or-6eU"/>
+                                    <constraint firstItem="uMx-Cl-YX6" firstAttribute="centerX" secondItem="3Aw-54-lqC" secondAttribute="centerX" id="6nS-2y-Bat"/>
+                                    <constraint firstAttribute="height" constant="50" id="8Yx-y8-KQZ">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="75"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="100" id="wnx-Pf-Oiu">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xkd-K3-UF2" userLabel="View btn Pacotes">
-                                <rect key="frame" x="241" y="168" width="100" height="50"/>
+                                <rect key="frame" x="724" y="213" width="150" height="75"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0W-mJ-eLr">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0W-mJ-eLr">
+                                        <rect key="frame" x="47.5" y="22.5" width="55" height="30"/>
                                         <state key="normal" title="pacotes">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -78,23 +87,29 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="jZW-2Y-W2B"/>
-                                    <constraint firstAttribute="width" constant="100" id="xaP-LO-f31"/>
+                                    <constraint firstItem="y0W-mJ-eLr" firstAttribute="centerX" secondItem="Xkd-K3-UF2" secondAttribute="centerX" id="F4q-LQ-BCD"/>
+                                    <constraint firstItem="y0W-mJ-eLr" firstAttribute="centerY" secondItem="Xkd-K3-UF2" secondAttribute="centerY" id="ixK-bH-cFk"/>
+                                    <constraint firstAttribute="height" constant="50" id="jZW-2Y-W2B">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="75"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="100" id="xaP-LO-f31">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XEF-F2-T96">
-                                <rect key="frame" x="0.0" y="237" width="375" height="541"/>
+                                <rect key="frame" x="0.0" y="307" width="1024" height="1059"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="destinos" rowHeight="175" id="o43-qa-odp" customClass="DestinoTableViewCell" customModule="Gabriel_Viagens" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="175"/>
+                                        <rect key="frame" x="0.0" y="28" width="1024" height="175"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o43-qa-odp" id="rMd-Vl-ywx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="175"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyl-N5-SiF">
-                                                    <rect key="frame" x="5" y="2" width="365" height="22"/>
+                                                    <rect key="frame" x="5" y="2" width="1014" height="22"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="16"/>
                                                     <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -106,10 +121,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IS2-Kd-A2h">
-                                                    <rect key="frame" x="15" y="24" width="345" height="125"/>
+                                                    <rect key="frame" x="15" y="24" width="994" height="125"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vri-B7-Nzh">
-                                                    <rect key="frame" x="323" y="151" width="37" height="21"/>
+                                                    <rect key="frame" x="972" y="151" width="37" height="21"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <bool key="isElement" value="NO"/>
                                                     </accessibility>
@@ -144,17 +159,25 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Xkd-K3-UF2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="124" id="EKk-c0-vLg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xkd-K3-UF2" secondAttribute="trailing" constant="34" id="Bdm-8s-aiD">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                             <constraint firstItem="9sf-er-UAH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fc8-bW-nCH"/>
                             <constraint firstItem="9sf-er-UAH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LST-7M-6bP"/>
                             <constraint firstItem="XEF-F2-T96" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="R6h-4M-LJ4"/>
                             <constraint firstItem="XEF-F2-T96" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RTD-Q9-N5h"/>
-                            <constraint firstItem="3Aw-54-lqC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="T5w-6P-y6c"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xkd-K3-UF2" secondAttribute="trailing" constant="34" id="VhW-vg-xjj"/>
+                            <constraint firstItem="3Aw-54-lqC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="T5w-6P-y6c">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
+                            <constraint firstItem="Xkd-K3-UF2" firstAttribute="top" secondItem="9sf-er-UAH" secondAttribute="bottom" constant="-23" id="W7l-Jk-AKO">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-37"/>
+                            </constraint>
                             <constraint firstItem="XEF-F2-T96" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Zwd-h1-Rgn"/>
                             <constraint firstItem="9sf-er-UAH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="geC-gg-11n"/>
+                            <constraint firstItem="3Aw-54-lqC" firstAttribute="top" secondItem="9sf-er-UAH" secondAttribute="bottom" constant="-23" id="j67-BZ-ppF">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-37"/>
+                            </constraint>
                             <constraint firstItem="XEF-F2-T96" firstAttribute="top" secondItem="3Aw-54-lqC" secondAttribute="bottom" constant="19" id="mcF-gh-Lge"/>
-                            <constraint firstItem="3Aw-54-lqC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="124" id="pBk-Wc-zaL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
