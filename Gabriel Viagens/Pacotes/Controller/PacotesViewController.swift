@@ -11,6 +11,7 @@ import UIKit
 class PacotesViewController: UIViewController {
 
     @IBOutlet weak var colecaoPacotesViagem: UICollectionView!
+    let listaViagens = ViagemDAO.retornaTodasAsViagens()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +21,21 @@ class PacotesViewController: UIViewController {
 
 extension PacotesViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return listaViagens.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaPacote", for: indexPath) as! PacotesViagemCollectionViewCell
-        cell.backgroundColor = UIColor.blue
+        let viagemAtual = listaViagens[indexPath.row]
+        cell.imagem.image = UIImage(named:viagemAtual.urlImage)
+        cell.titulo.text = viagemAtual.titulo
+        cell.qntDias.text = "\(viagemAtual.qntDias) Dias"
+        cell.preco.text = "R$ \(viagemAtual.preco)"
+    
+        cell.layer.borderWidth = 0.5
+        cell.layer.borderColor = UIColor(red: 85.0/255.0, green: 85.0/255.0, blue: 85.0/255.0, alpha: 1).cgColor
+        cell.layer.cornerRadius = 8
         return cell
     }
+    
 }

@@ -9,5 +9,9 @@
 import UIKit
 
 class PacotesViagemCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var imagem: UIImageView!
+    @IBOutlet weak var titulo: UILabel!
+    @IBOutlet weak var qntDias: UILabel!
+    @IBOutlet weak var preco: UILabel!
     
 }
