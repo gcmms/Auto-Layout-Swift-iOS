@@ -16,6 +16,7 @@ class PacotesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         colecaoPacotesViagem.dataSource = self
+        colecaoPacotesViagem.delegate = self
     }
 }
 
@@ -37,5 +38,16 @@ extension PacotesViewController: UICollectionViewDataSource {
         cell.layer.cornerRadius = 8
         return cell
     }
+}
+
+extension PacotesViewController: UICollectionViewDelegateFlowLayout {
+
+    func collectionView(_ collectionView: UICollectionView, layout: UICollectionViewLayout, sizeForItemAt: IndexPath) -> CGSize {
+        //Pega a largura toda da collectionView e divide por dois (para ter duas por tela)
+        //Tira 10 para considerar a distancia entre elas
+        let width = (collectionView.bounds.width / 2) - 10
+        return CGSize(width: width, height: 160)
+    }
+    
     
 }
