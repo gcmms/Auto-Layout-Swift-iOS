@@ -10,13 +10,15 @@ import UIKit
 
 class PacotesViewController: UIViewController {
 
+    @IBOutlet weak var pesquisaViagens: UISearchBar!
     @IBOutlet weak var colecaoPacotesViagem: UICollectionView!
-    let listaViagens = ViagemDAO.retornaTodasAsViagens()
+    var listaViagens = ViagemDAO.retornaTodasAsViagens()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         colecaoPacotesViagem.dataSource = self
         colecaoPacotesViagem.delegate = self
+        pesquisaViagens.delegate = self
     }
 }
 
@@ -48,6 +50,18 @@ extension PacotesViewController: UICollectionViewDelegateFlowLayout {
         let width = (collectionView.bounds.width / 2) - 10
         return CGSize(width: width, height: 160)
     }
+}
+
+extension PacotesViewController: UISearchBarDelegate {
     
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        let filtroListaViagem = NSPredicate(format: "titulo contains %@", searchText)
+        let nsListaViagem = listaViagens as NSArray
+        nsListaViagem.filtered(using: filtroListaViagem)
+        //let listaFiltrada: [Viagem] = (listaViagens as NSArray).filtered(using: filtroListaViagem) as! [Viagem]
+        listaViagens = nsListaViagem as! [Viagem]
+        colecaoPacotesViagem.reloadData()
+        
+    }
     
 }
